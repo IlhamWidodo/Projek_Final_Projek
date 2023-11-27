@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">  
-    <title>Document</title>
+    <title>Form Registrasi</title>
 </head>
 <body>
-    <div class="register2">
-        <h2>REGISTER</h2>
-            <input type="text" name="name" placeholder="Enter your name">
-            <input type="email" name="email" placeholder="Enter your email">
-            <input type="password" name="password" placeholder="Enter your password">
-            <input type="password" name="confirm" placeholder="Confirm your password">
-            <input class="submit" type="submit" value="Register" name="submit">
-            <p>Already have an account? <a href="login.php">Login</a></p>
-        </div>
-    
+    <h2>Registrasi</h2>
+    <form action="../backend/register.php" method="post"> <!-- Ganti jalur aksi (action) sesuai dengan struktur direktori -->
+        <label for="nama">Nama:</label><br>
+        <input type="text" id="nama" name="nama"><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password"><br>
+        <label for="confirm_password">Konfirmasi Password:</label><br>
+        <input type="password" id="confirm_password" name="confirm_password"><br><br>
+        <input type="submit" value="Submit">
+    </form>
 </body>
 </html>
